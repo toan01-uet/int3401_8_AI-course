@@ -1,14 +1,21 @@
-# 2021l_INT3401_8_Reinforcement_Learning
-Solutions for Pacman Project 2021l_INT3401_8 courses of UET-VNU
+## Result 
+
+==================
+Question q1: 6/6
+Question q2: 1/1
+Question q3: 5/5
+Question q4: 5/5
+Question q5: 3/3
+Question q6: 1/1
+Question q7: 1/1
+Question q8: 3/3
+------------------
+Total: 25/25
+
 
 ## Question 1: Value iteration
 
-  **Hàm tính value**: với mỗi action trong mỗi state tính ra tổng điểm rồi lấy giá trị lớn nhất tương ứng với action.
-  
-  **Hàm computeQValueFromValues**: tương tự hàm trên nhưng chỉ tính value của từng cặp state, action, không lấy max
-
-  **Hàm computeActionFromValues**: trả về hành động có điểm số tốt nhất
-  
+Dùng công thức  MDPs
 
 ## Question 2 : Bridge Crossing Analysis
 Thay tham số noise từ 0.2 về 0
@@ -53,7 +60,11 @@ Thay tham số noise từ 0.2 về 0
         answerLivingReward = 11
         return answerDiscount, answerNoise, answerLivingReward
 
-## Question 4: Q-learning
-Tương tự câu 1 ngoại trừ hàm update.
+## Question 4 vs 5: 
+Áp dụng công thức của thuật toán Q-Learning và Q-Learning with Epsilon.
+## Question 6:
+Kể cả khi epsilon ~1, khả năng đi được tới ô +10 một cách ngẫu nhiên ~0.1%. Nếu chỉ train agent 50 lần, thì khả năng đi qua được cầu của agent là không có.
+## Question 8:
+Sử dụng Approximate Q-Learning.
 
 
